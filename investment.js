@@ -17,9 +17,8 @@ async function createInvestmentAccount() {
         });
 
         console.log('Account created successfully:', response.data);
-        
-        // After successfully creating the account, call the buyStocks function
-        buyStocks(response.data.accountNumber); // Pass the account number to buyStocks function
+     
+        buyStocks(response.data.accountNumber); 
     } catch (error) {
         console.error('Error creating account:', error.response ? error.response.data : error.message);
     }
@@ -48,5 +47,4 @@ async function buyStocks(accountNumber) {
     }
 }
 
-// Call the function to create the investment account
 createInvestmentAccount();
