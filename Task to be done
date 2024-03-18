@@ -1,0 +1,49 @@
+Stock Market Challenge - Invest in Bajaj Finserv!
+Introduction:
+Get ready to put your investor hat on! In this Stock Market Challenge, you'll create a virtual investment account
+and strategically invest in Bajaj Finserv.
+
+The Challenge:
+1. Become an Investor: Use the provided API to create a virtual investment account. (Remember, this is a
+simulation!)
+2. Research Bajaj Finserv: Do some light research from the internet on Bajaj Finserv's recent
+performance and current stock price.
+3. Invest Wisely: Use the second API to buy some stocks in Bajaj Finserv.
+
+API Documentation:
+API 1: Create Investment Account
+• URL: https://customer-analytics-34146.my.salesforce-sites.com/services/apexrest/createAccount
+• Method: POST
+• Headers:
+o Content-Type: application/json
+• Body: JSON
+{
+"name": "Your Full Name", (string)
+"email": "your_colle@example.com", (string)
+"rollNumber": Your roll Number, (number)
+"phone": Your Phone Number (number)
+}
+
+API 2: Buy Stocks
+• URL: https://customer-analytics-34146.my.salesforce-sites.com/services/apexrest/buyStocks
+• Method: POST
+• Headers:
+o content-type: application/json
+o bfhl-auth: ( your roll number )
+• Body:
+JSON
+{
+"company": "Company Name" (The company you want to invest in),
+"currentPrice": Current Stock Price (Look up the real price from the internet),
+"accountNumber": Investment account number( You’ll be getting this in the response from the first
+API ),
+"githubRepoLink" : " https://github.com/"( Pass your github repo link here)
+}
+Passing Criteria:
+• You successfully created a investment account using API 1.
+• You were able to invest in Bajaj Finserv using API 2.
+• Push your code to github and pass link to your repo in API 2 in “githubRepoLink” key.
+• This is a hands-on challenge. We'll assess your understanding by how effectively you use the provided
+APIs.
+Remember: This is a simulated environment for learning purposes. Always do your own research before
+investing real money in the stock market.
