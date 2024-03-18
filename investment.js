@@ -31,7 +31,7 @@ async function buyStocks(accountNumber) {
             company: 'Bajaj', 
             currentPrice: 1000, 
             accountNumber: accountNumber,
-            githubRepoLink: 'https://github.com/' 
+            githubRepoLink: 'https://github.com/shivanshu1319' 
         };
 
         const response = await axios.post(apiUrl, requestData, {
